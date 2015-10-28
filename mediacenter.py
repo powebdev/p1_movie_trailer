@@ -1,6 +1,8 @@
 import media
 import fresh_tomatoes
 
+# Creates a number of Movie objects with movie title, description,
+# url for poster art and youtube trailer, and movie running time.
 the_martian = media.Movie("The Martian",
                           "The world watches as NASA tries to bring "
                           "Matt Damon back from Mars.",
@@ -121,9 +123,9 @@ star_wars_six = media.Movie("Star Wars: Episode VI - Return of the Jedi",
                             "https://www.youtube.com/watch?v=16YLjTkK5jE",
                             134)
 
-
-fresh_tomatoes.open_movies_page([the_martian, scott_pilgrim, wreck_it_ralph,
-                                 firefly_season_one_point_five,
-                                 robots_vs_monsters, terminator_two,
-                                 star_wars_four, star_wars_five, star_wars_two,
-                                 star_wars_three, star_wars_six])
+list_of_movies = [the_martian, scott_pilgrim, wreck_it_ralph,
+                  firefly_season_one_point_five,
+                  robots_vs_monsters, terminator_two,
+                  star_wars_four, star_wars_five, star_wars_two,
+                  star_wars_three, star_wars_six]
+fresh_tomatoes.open_movies_page(list_of_movies)
